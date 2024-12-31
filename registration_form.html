@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanotechnology Registration Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 600px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nanotechnology Registration Form</h1>
+        <form action="/submit-registration" method="post">
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" name="company_name" required>
+            
+            <label for="country">Company Nationality</label>
+            <select id="country" name="country" required>
+                <option value="">Select Nationality</option>
+                <option value="oman">Oman</option>
+                <option value="ksa">Saudi Arabia</option>
+                <option value="uae">UAE</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="specialization">Nanotechnology Specialization</label>
+            <input type="text" id="specialization" name="specialization" required>
+
+            <label for="manufacturer">Is the company a manufacturer of nanotechnology?</label>
+            <select id="manufacturer" name="manufacturer" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="producer">Is the company a producer of nanotechnology?</label>
+            <select id="producer" name="producer" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="products">List of Products</label>
+            <textarea id="products" name="products" rows="4" required></textarea>
+
+            <label for="partnership">Willingness to Partner and Enter the Omani Market</label>
+            <select id="partnership" name="partnership" required>
+                <option value="interested">Interested</option>
+                <option value="not-interested">Not Interested</option>
+                <option value="need-info">Need More Information</option>
+            </select>
+
+            <label for="other-info">Additional Information</label>
+            <textarea id="other-info" name="other_info" rows="4"></textarea>
+            
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+</body>
+</html>
